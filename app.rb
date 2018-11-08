@@ -4,5 +4,7 @@ class App < Sinatra::Base
   
   configure do 
     enable :sessions
-    
+    set session_secret "not-secret"
+  end 
+  
 end
